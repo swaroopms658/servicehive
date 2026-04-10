@@ -33,6 +33,12 @@ The app uses OpenAI as primary and falls back to Groq automatically if OpenAI fa
 python main.py
 ```
 
+
+
+https://github.com/user-attachments/assets/8eadec81-819a-4f8c-9447-1cb63b7050f9
+
+
+
 ## Architecture
 
 I used LangGraph because this assignment is a stateful workflow rather than a single prompt-response loop. The agent needs to detect intent, retrieve local knowledge, track lead fields across turns, and enforce a strict tool-calling condition before lead capture. LangGraph fits that shape well because each step can be represented as a node with explicit transitions and shared typed state.
